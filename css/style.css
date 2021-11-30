@@ -20,8 +20,13 @@ html{
 body{
        font-family: 'Manrope', sans-serif;
        font-size: 1.3rem;
-       background-color:var(--Light-Grayish-Blue);
-       padding: 7.5rem 2.5rem;       
+       background-color:var(--Light-Grayish-Blue);       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       height: 100vh;
+               
 }
 main{
        width: 33rem;      
@@ -89,4 +94,37 @@ footer address button{
        border: none;
        cursor: pointer;
        
+}
+
+@media screen and (min-width: 700px){
+       
+       main{
+              width: 735px;  
+              height: 285px;             
+              flex-direction: row;                 
+       }
+       section.left img{    
+              width: 288px;
+              height: 285px;  
+              object-fit: cover;  
+              object-position: 0 32%; 
+              border-radius: 1rem 0 0 1rem;           
+       }   
+       section.right{
+              padding: 4rem;
+       }      
+       section.right header{
+              padding: 0;
+              margin-bottom: 1rem;
+       }   
+       section.right header h2{
+              font-size: 2rem;            
+       }
+       section.right > p{
+              padding: 0 ; 
+              margin-bottom: 2rem;  
+       }  
+       footer address{             
+              padding: 0;             
+       }       
 }
