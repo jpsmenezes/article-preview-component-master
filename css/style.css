@@ -52,3 +52,41 @@ section.right > p{
        color: var(--Desaturated-Dark-Blue);
        line-height: 2rem;
 }
+footer address{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 3rem 2.8rem;
+}
+footer address .people{
+       display: flex;
+       align-items: center;
+}
+footer address .people img{
+       width: 4rem;
+       height: 4rem;
+       border-radius: 50%;
+       margin-right: 2rem;
+}
+footer address .people p{
+      font-style: normal;
+      font-weight: 700;
+      color: var(--Very-Dark-Grayish-Blue);
+}
+footer address .people span{
+       display: block;
+       font-style: normal;
+       font-weight: 400;
+       color: var(--Grayish-Blue);
+}
+footer address button{
+       width: 3.3rem;
+       height: 3.3rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 50%;
+       border: none;
+       cursor: pointer;
+       
+}
