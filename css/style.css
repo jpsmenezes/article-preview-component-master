@@ -99,7 +99,7 @@ footer address button{
 }
 .share{
        position: absolute;   
-       display: none; 
+       display: flex; 
        justify-content: space-around;
        align-items: center;  
        padding: 0 3rem; 
@@ -110,6 +110,9 @@ footer address button{
        border-radius: 1rem;
        background-color: var(--Very-Dark-Grayish-Blue); 
        z-index: 1;      
+}
+.share.click{
+       display: none;
 }
 /* triangulo feito com bordas*/
 .share::after{
