@@ -28,7 +28,7 @@ body{
        height: 100vh;
                
 }
-main{
+main{       
        width: 33rem;      
        display: flex;
        flex-direction: column;
@@ -57,6 +57,9 @@ section.right > p{
        color: var(--Desaturated-Dark-Blue);
        line-height: 2rem;
 }
+footer{
+       position: relative;
+}
 footer address{
        display: flex;
        justify-content: space-between;
@@ -84,7 +87,7 @@ footer address .people span{
        font-weight: 400;
        color: var(--Grayish-Blue);
 }
-footer address button{
+footer address button{       
        width: 3.3rem;
        height: 3.3rem;
        display: flex;
@@ -92,8 +95,41 @@ footer address button{
        align-items: center;
        border-radius: 50%;
        border: none;
-       cursor: pointer;
-       
+       cursor: pointer;       
+}
+.share{
+       position: absolute;   
+       display: none; 
+       justify-content: space-around;
+       align-items: center;  
+       padding: 0 3rem; 
+       top: -7.5rem;
+       left: 22.5rem;
+       width: 250px;
+       height: 55px;
+       border-radius: 1rem;
+       background-color: var(--Very-Dark-Grayish-Blue); 
+       z-index: 1;      
+}
+/* triangulo feito com bordas*/
+.share::after{
+       content: ' ';
+       position: absolute;
+       top: 42px;
+       left: 40%;
+       width: 0;
+       height: 0;       
+       border-left: 25px solid transparent;
+       border-right: 25px solid transparent;
+       border-top: 25px solid var(--Very-Dark-Grayish-Blue);
+}
+.share img{
+       width: 2rem;
+       height: 2rem;
+}
+.share > p{
+       color: var(--Grayish-Blue);
+       letter-spacing: 0.7rem;
 }
 
 @media screen and (min-width: 700px){
