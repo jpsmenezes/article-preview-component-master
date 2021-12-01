@@ -115,10 +115,10 @@ footer address button{
        height: 55px;
        border-radius: 1rem;
        background-color: var(--Very-Dark-Grayish-Blue); 
-       z-index: 1;      
+       z-index: 1;           
 }
 .share.click{
-       display: none;
+       display: none;      
 }
 /* triangulo feito com bordas*/
 .share::after{
@@ -135,13 +135,17 @@ footer address button{
 .share img{
        width: 2rem;
        height: 2rem;
+       cursor: pointer;       
+}
+.share img:hover{
+       opacity: 0.5;
 }
 .share > p{
        color: var(--Grayish-Blue);
        letter-spacing: 0.7rem;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 740px){
        
        main{
               width: 735px;  
