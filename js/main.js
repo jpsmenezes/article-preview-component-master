@@ -7,7 +7,7 @@ button.addEventListener('click', () => {
        button.classList.toggle('active');
        if(button.classList.contains('active')){
               button.style.display = "none";
-              buttonActive.style.display = "flex";
+              buttonActive.style.display = "flex";              
        }else{
               button.style.display = "flex";
               buttonActive.style.display = "none";
