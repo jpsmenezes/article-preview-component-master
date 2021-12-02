@@ -64,7 +64,7 @@ footer address{
        display: flex;
        justify-content: space-between;
        align-items: center;
-       padding: 3rem 2.8rem 2rem;
+       padding: 3rem 2.8rem 1.5rem;
 }
 footer address .people{
        display: flex;
@@ -96,14 +96,14 @@ footer address button{
        border: none;
        cursor: pointer;       
 }
-.icon{
+footer address .icon{
        display: flex;
 }
-.icon.active{
+footer address .icon.active{
        background-color:var(--Desaturated-Dark-Blue);
        display: none;
 }
-.share{
+footer .share{
        position: absolute;   
        display: flex; 
        justify-content: space-around;
@@ -117,11 +117,11 @@ footer address button{
        background-color: var(--Very-Dark-Grayish-Blue); 
        z-index: 1;           
 }
-.share.click{
+footer .share.click{
        display: none;      
 }
 /* triangulo feito com bordas*/
-.share::after{
+footer .share::after{
        content: ' ';
        position: absolute;
        top: 42px;
@@ -132,15 +132,15 @@ footer address button{
        border-right: 25px solid transparent;
        border-top: 25px solid var(--Very-Dark-Grayish-Blue);
 }
-.share img{
+footer .share img{
        width: 2rem;
        height: 2rem;
        cursor: pointer;       
 }
-.share img:hover{
+footer .share img:hover{
        opacity: 0.5;
 }
-.share > p{
+footer .share > p{
        color: var(--Grayish-Blue);
        letter-spacing: 0.7rem;
 }
@@ -185,10 +185,10 @@ footer address button{
               justify-content:start;
               align-items: center;  
               padding: 0 3rem; 
-              top: 1.9rem;
+              top: 1.5rem;
               left: 0;
               width: 100%;
-              height: 70px;
+              height: 7rem;
               border-radius: 0 0 1rem 1rem;
               background-color: var(--Very-Dark-Grayish-Blue); 
               z-index: 1;           
@@ -203,7 +203,7 @@ footer address button{
        footer .share img{
               margin-right: 1.5rem;
        }
-       .icon.active{
+       footer address .icon.active{
               position: relative;
               z-index: 1;
               background-color:var(--Desaturated-Dark-Blue);
